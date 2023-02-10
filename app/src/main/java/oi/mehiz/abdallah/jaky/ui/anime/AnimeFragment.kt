@@ -1,4 +1,4 @@
-package oi.mehiz.abdallah.jaky.ui.notifications
+package oi.mehiz.abdallah.jaky.ui.anime
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import oi.mehiz.abdallah.jaky.databinding.FragmentNotificationsBinding
+import oi.mehiz.abdallah.jaky.databinding.FragmentAnimeBinding
 
-class NotificationsFragment : Fragment() {
+class AnimeFragment : Fragment() {
 
-    private var _binding: FragmentNotificationsBinding? = null
+    private var _binding: FragmentAnimeBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class NotificationsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val notificationsViewModel =
-            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+        val animeViewModel =
+            ViewModelProvider(this).get(AnimeViewModel::class.java)
 
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+        _binding = FragmentAnimeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textAnime
+        animeViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

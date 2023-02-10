@@ -1,13 +1,13 @@
-package oi.mehiz.abdallah.jaky.ui.home
+package oi.mehiz.abdallah.jaky.ui.manga
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class MangaViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is Home Fragment"
+        value = "This is Manga Fragment"
     }
     val text: LiveData<String> = _text
 }

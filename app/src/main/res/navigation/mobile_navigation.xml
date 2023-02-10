@@ -12,14 +12,26 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="oi.mehiz.abdallah.jaky.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_social"
+        android:name="oi.mehiz.abdallah.jaky.ui.social.SocialFragment"
+        android:label="@string/title_social"
+        tools:layout="@layout/fragment_social" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="oi.mehiz.abdallah.jaky.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_anime"
+        android:name="oi.mehiz.abdallah.jaky.ui.anime.AnimeFragment"
+        android:label="@string/title_anime"
+        tools:layout="@layout/fragment_anime" />
+
+    <fragment
+        android:id="@+id/navigation_manga"
+        android:name="oi.mehiz.abdallah.jaky.ui.manga.MangaFragment"
+        android:label="@string/title_manga"
+        tools:layout="@layout/fragment_manga" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="oi.mehiz.abdallah.jaky.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
